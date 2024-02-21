@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" type="image/png" href="Assets/solar-panels_4114975.png">
+    <title>Registration</title>
+</head>
+
+<body>
+    <!--------------- Main container --------------->
+    <div class="container rounded-3 d-flex justify-content-center align-items-center min-vh-100 ">
+        <!--------------- login box --------------->
+        <div class="row border rounded-3 p-3 bg-white shadow box-area">
+            <!--------------- left box --------------->
+            <div class="col-md-6 rounded-3 d-flex justify-content-center align-items-center flex-column left-box">
+                <div class="featured-image mb-3">
+                    <img src="Assets/Personal settings.gif" alt="login gif" class="img-fluid" style="Width :250px">
+                </div>
+                <p class="fs-4">Be Verified</p>
+                <small>Lorem ipsum dolor sit amet consectetur.</small>
+            </div>
+            <!--------------- right box --------------->
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <p class="fs-3">Registrate here</p>
+                        <p>We are happy to have you in our family</p>
+                    </div>
+                    <small class="usr-name-err-msg text-danger mb-1 d-none" id="signUpUserNameErr">At least 3 chars starting with uppercase letter, no symbols*</small>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light form fs-6" placeholder="User name"
+                            id="userNameInput">
+                    </div>
+                    <small class="mail-err-msg text-danger mb-1 d-none" id="signUpMailErrMsg">Enter email address*</small>
+                    <small class="exist-mail-err-msg text-danger mb-1 d-none" id="ExistsignUpMailErrMsg">Email is already taken*</small>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light form fs-6"
+                            placeholder="Email address" id="userMailInput">
+                    </div>
+                    <small class="pass-err-msg text-danger mb-1 d-none"id="signUpPassErrMsg">you must strenth your password (8-40) characters*</small>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control form-control-lg bg-light form fs-6"
+                            placeholder="Password" id="userPassInput">
+                    </div>
+                    <small class="repass-err-msg text-danger mb-1 d-none" id="confPswrdErrMsg">passwords are not the same*</small>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control form-control-lg bg-light form fs-6" placeholder="Password"
+                            id="userRePassInput">
+                    </div>
+                    <a href="index.html" class="mb-3"><small>Login?</small></a>
+                </div>
+                <div>
+                    <button class="btn btn-primary w-100 mb-2" id="signUpBtn" onclick="signUp()">Sign up</button>
+                </div>
+                <div>
+                    <button class="btn btn-lg btn-light w-100" id="googleSignUpBtn">
+                        <img src="Assets/Goole-logo.png" alt="google-Login" style="width:20px">
+                        Sign up with google
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
