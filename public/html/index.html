@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" type="image/png" href="Assets/solar-panels_4114975.png">
+    <title>Login</title>
+</head>
+<body>
+    <!--------------- Main container --------------->
+    <div class="container rounded-3 d-flex justify-content-center align-items-center min-vh-100 ">
+    <!--------------- login box --------------->
+        <div class="row border rounded-3 p-3 bg-white shadow box-area">
+    <!--------------- left box --------------->
+            <div class="col-md-6 rounded-3 d-flex justify-content-center align-items-center flex-column left-box">
+                <div class="featured-image mb-3">
+                    <img src="Assets/Account.gif" alt="login gif" class="img-fluid" style="Width :250px">
+                </div>
+                <p class="fs-4">Be Verified</p>
+                <small>Lorem ipsum dolor sit amet consectetur.</small>
+            </div>
+    <!--------------- right box --------------->
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <p class="fs-3">Hello,Again</p>
+                        <p>We are happy to have you back!</p>
+                    </div>
+                    <small class="mail-err-msg text-danger mb-1 d-none" id="signInUserMailErr">Enter email address first*</small>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light form fs-6" placeholder="Email address" id="loginMailInput">
+                    </div>
+                    <small class="pass-err-msg text-danger mb-1 d-none " id="signInUserPassErr">Enter password*</small>
+                    <div class="input-group mb-2">
+                        <input type="password" class="form-control form-control-lg bg-light form fs-6" placeholder="Password" id="loginPassInput">
+                    </div>
+                    <div class="input-group mb-3 justify-content-between">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="FormChecker">
+                            <label for="FormChecker" class="form-check-label text-secondary"><small>Remember me</small></label>
+                        </div>
+                        <div class="forgot">
+                            <a href="#"><small>Forgot password?</small></a>
+                        </div>
+                    </div>
+                    <div class="create mb-4">
+                        <a href="signup.html"><small>Create account</small></a>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary w-100 mb-2" id="signInBtn" onclick="login()">Login</button>
+                </div>
+                <div>
+                    <button class="btn btn-lg btn-light w-100" id="googleSignInBtn">
+                        <img src="Assets/Goole-logo.png" alt="google-Login" style="width:20px">
+                        Sign in with google
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
