@@ -5,20 +5,22 @@ const schema={
     "type":"object",
     "properties":{
         "name":{
-            "type":"string",
-            "pattern":"^[A-Z][a-z]*$"
+            "type":"string"
         },
         "email":{
-            "type":"string",
-            "pattern":".+\@.+\..+"
+            "type":"string"
         },
         "password":{
-            "type":"string",
-            "minLength":5
-        }
-
+            "type":"string"
+        },
+        "phoneNumber": {
+            "type": "string"
+          },
+    "address": {
+      "type": "string"
     },
-    "required":["name","password","email"]
+    },
+    "required":["name","password","email","phoneNumber","address"]
 }
 
 

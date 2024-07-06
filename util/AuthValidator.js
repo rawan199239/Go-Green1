@@ -7,11 +7,10 @@ const schema={
 
         "email":{
             "type":"string",
-            "pattern":".+\@.+\..+"
+            
         },
         "password":{
             "type":"string",
-            "minLength":5,
             "maxLength":1024
         }
 

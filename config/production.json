@@ -1,0 +1,5 @@
+{
+    "database": {
+        "port": 3001,
+        "database": "mongodb+srv://rawanshahin95:S4uNtQjouQJAeIPO@cluster0.bu7gwq9.mongodb.net/GoGreen"
+}}
