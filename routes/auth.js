@@ -74,28 +74,3 @@ router.post("/", validator, async (req, res) => {
 module.exports = router;
 
 
-
-  /*console.log("Sending response");
-    res.status(200).send({
-      message: "success",
-      user: {
-       ...user, // spread operator to include all other user properties
-        months: [
-          { month: "january", count: user.january },
-          { month: "february", count: user.february },
-          { month: "march", count: user.march },
-          { month: "april", count: user.april },
-          { month: "may", count: user.may },
-          { month: "june", count: user.june },
-          { month: "july", count: user.july },
-          { month: "august", count: user.august },
-          { month: "september", count: user.september },
-          { month: "october", count: user.october },
-          { month: "november", count: user.november },
-          { month: "december", count: user.december }
-        ]
-      },
-      token: token
-    });*/
-
-
